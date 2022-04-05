@@ -18,6 +18,12 @@ Some sampling methods for various discrete and continuous random variables.
 | dirichlet        | alphas       |       |
 | chi-squared  | center,spread |      |
 
+## Locale
+
+```j
+cocurrent 'sampling'
+```
+
 ## Uniform (Continuous)
 
 ```j

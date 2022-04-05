@@ -26,8 +26,7 @@ NB.		sigma: std. dev. of distribution, any float.
 NB.		num: number of variables to return.
 NB. Returns:
 NB.	'num' values, each sampled form the above distribution.
-normalSample=: 3 : 0"1
-NB.    plot #/.~ /:~  <. 10 * normalSample 0 1 5000
+normalSample=: 3 : 0"1 
 'mu sigma num'=. y
 ct=. 0
 res=. ''
@@ -47,8 +46,7 @@ NB.		b: scale value, any float > 0.
 NB.		num: number of variables to return.
 NB. Returns:
 NB.	'num' values, each sampled form the above distribution.
-cauchySample=: 3 : 0"1
-NB. plot #/.~ /:~ <.k [k=: cauchySample 0 1 90000
+cauchySample=: 3 : 0"1 
 'a b num'=. y
 ct=. 0
 res=. ''
@@ -68,8 +66,7 @@ NB.		lambda: the expected value, any float > 0.
 NB.		num: number of variables to return.
 NB. Returns:
 NB.	'num' values, each sampled form the above distribution.
-exponentialSample=: 3 : 0"1
-NB. plot #/.~ /:~ <.100*k  [k=: exponentialSample 10 1000
+exponentialSample=: 3 : 0"1 
 'lambda num'=. y
 ct=. 0
 res=. ''
@@ -88,8 +85,7 @@ NB.		lambda: the expected value, any float > 0.
 NB.		num: number of variables to return.
 NB. Returns:
 NB.	'num' values, each sampled form the above distribution.
-poissonSample=: 3 : 0"1
-NB. plot    #/.~ /:~ <.k [k=: poissonSample 2.222 10000
+poissonSample=: 3 : 0"1 
 'lambda num'=: y
 poissonx"0 num # lambda
 )
